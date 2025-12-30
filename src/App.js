@@ -146,10 +146,7 @@ const router = createBrowserRouter([
 
 {
   index: true,
-  element:
-    localStorage.getItem("isLoggedIn") === "true"
-      ? <Navigate to="/home" />
-      : <Navigate to="/login" />
+  element: <Navigate to="/home" />,
 },
 { path: 'login', element: <Login /> },
 { path: 'home', element: <Home /> },
