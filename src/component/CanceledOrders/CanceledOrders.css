@@ -173,6 +173,11 @@ padding-top: 0;
     font-weight: 700;
     top: auto; /* removed the previous fixed top that pushed layout down */
   }
+  .canceledorder-card {
+      min-height: 256px;
+  } 
+  
+
 }
 
 /* ---------- Tablet: 768px — 1024px ---------- */

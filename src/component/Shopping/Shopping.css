@@ -296,8 +296,10 @@ font-weight: bold;
   }
 
   .category-page .customer-products-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    /* grid-template-columns: repeat(2, 1fr);
+    gap: 15px; */
+    display: block;
+
   }
 
   .load-more-btn {

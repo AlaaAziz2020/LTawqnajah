@@ -290,6 +290,8 @@ textarea.form-control {
   .community-page { 
     padding-top: 0px;
             padding-bottom: 73px;
+                    margin-top: 50% !important;
+
    } /* phones */
 
   .community-card {
@@ -368,12 +370,11 @@ textarea.form-control {
     font-size: 16px !important;
   }
 
-  .setting-btn {
-    width: 100%;
-    padding: 10px 12px;
-    text-align: center;
-  }
-
+    .setting-btn {
+        width: 100%;
+        padding: 10px 12px;
+        text-align: center;
+    }
   .community-card,
   .community-wrapper,
   .form-col {

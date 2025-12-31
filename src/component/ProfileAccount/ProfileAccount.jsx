@@ -1,15 +1,13 @@
-import React, { useState } from "react";
-import "../ProfileAccount/ProfileAccount.css";
+ import React, { useState } from "react";
+ import "../ProfileAccount/ProfileAccount.css";
+ import avatarImg from "../../assets/avatar.jpg";
+ import profilepicture from "../../assets/profileicon.png";
+ import accountimg from "../../assets/account-img.png";
+ import marketingimg from "../../assets/m2.png";
+ import survimg from "../../assets/surv-img.png";
+ import logoutimg from "../../assets/logout-img.png";
 import { Link } from "react-router-dom";
 
-// ==== Images ====
-import avatarImg from "../../assets/avatar.jpg";
-import profilepicture from "../../assets/profileicon.png";
-import marketingimg from "../../assets/m-img.png";
-import myadvertisements from "../../assets/myadvertisements.png";
-import addadvertisements from "../../assets/addadvertisements.png";
-import logoutimg from "../../assets/logout-img.png"; 
-import darkmarketing from "../../assets/dark-marketing.png";
 
 export default function ProfileAccount() {
   const [code, setCode] = useState("+966");
@@ -23,119 +21,124 @@ export default function ProfileAccount() {
     { key: "+962", name: "الأردن" },
     { key: "+974", name: "قطر" },
   ];
+   return (
+     <div className="profile-wrapper container" style={{marginTop:"90px"}}>
 
-  return (
-    <div className="cprofile-wrapper container  accordion-collapse mt-5 pt-5 mb-5 pb-5 ">
+      
+       <div className="marketing-sidebar ">
+         <button className="side-btn active" style={{alignItem:"center"}}>
+           <img src={profilepicture} alt="" /> حسابي الشخصي
+         </button>
 
-      {/* ===== SIDEBAR ===== */}
-      <div className="cprofilemarketing-sidebar acc-profile mt-5 pt-5 mb-5">
+         <button className="side-btn">
+           <img src={accountimg} alt="" />
+           <Link to='/seller/sellerbankaccount' className="text-dark text-decoration-none"> الحساب البنكي</Link>
+         </button>
 
-        <Link to="/profileaccount" className="side-btn active text-white fw-bold mt-5 ">
-          <img className="px-3" src={profilepicture} alt="" />
-          حسابي الشخصي
-        </Link>
+<Link to='/seller/sellermarketing' className="text-dark text-decoration-none">
+  <button className="side-btn">
+    <img src={marketingimg} alt="" />
+    التسويق
+  </button>
+</Link>
 
-        <Link to="/marketing" className="side-btn white">
-          <img className="px-3" src={darkmarketing} alt="" />
-          التسويق
-        </Link>
+         <button className="side-btn">
+                       <img src={survimg} alt="" /> 
 
-        <Link to="/advertisementdetails" className="side-btn white">
-          <img className="px-3" src={myadvertisements} alt="" />
-          إعلاناتي
-        </Link>
+            <Link to='/seller/sellercontractpage' className="text-dark text-decoration-none"> 
+           التقييم والعقود
+            </Link>
+         </button>
 
-        <Link to="/addadvertisement" className="side-btn white">
-          <img className="px-3" src={addadvertisements} alt="" />
-          إضافة إعلان
-        </Link>
-
-        <Link to="/logoutconfirm" className="side-btn logout">
-          <img className="px-3" src={logoutimg} alt="" />
+         <button className="side-btn logout">
+           <img src={logoutimg} alt="" /> 
+             <Link to='/seller/sellerlogoutconfirm' className="text-white text-decoration-none"> 
           تسجيل الخروج
-        </Link>
+            </Link>
+         </button>
+       </div>
 
-      </div>
+       <div className="profile-content">
 
-      {/* ===== MAIN PROFILE CONTENT ===== */}
-      <div className="profile-content mt-5 pt-5 mb-5">
+         <div className="profile-avatar-wrapper">
+           <div className="avatar-circle">
+             <img src={avatarImg} className="profile-avatar" alt="avatar" />
+             <button className="avatar-edit-btn">
+               <i className="fa-solid fa-pen"></i>
+             </button>
+           </div>
+         </div>
 
-        <div className="profile-avatar-wrapper mt-4">
-          <div className="avatar-circle">
-            <img src={avatarImg} className="profile-avatar" alt="avatar" />
-            <button className="avatar-edit-btn">
-              <i className="fa-solid fa-pen"></i>
-            </button>
-          </div>
-        </div>
+       
+         <form className="profile-form">
 
-        <form className="profile-form">
+           <div className="form-group">
+             <label className=" fw-bolder mb-2">اسم المحل / البائع</label>
+             <input className="form-input" placeholder="ادخل اسم المستخدم" />
+           </div>
 
-          <div className="form-group">
-            <label className="fw-bolder mb-2 pb-3">اسم المحل / البائع</label>
-            <input className="form-input" placeholder="ادخل اسم المستخدم" />
-          </div>
+           <div className="form-group">
+             <label className=" fw-bolder mb-2">البريد الإلكتروني</label>
+             <input className="form-input" placeholder="reem@email.com" />
+           </div>
 
-          <div className="form-group">
-            <label className="fw-bolder mb-2 pb-3">البريد الإلكتروني</label>
-            <input className="form-input" placeholder="email@example.com" />
-          </div>
+           <div className="form-group">
+             <label className=" fw-bolder mb-2">العنوان</label>
+             <input className="form-input" placeholder="الرياض، السعودية" />
+           </div>
 
-          <div className="form-group">
-            <label className="fw-bolder mb-2 pb-3">العنوان</label>
-            <input className="form-input" placeholder="الرياض، السعودية" />
-          </div>
+       
+      <div className="form-group">
+  <label className="fw-bolder mb-2">رقم الهاتف</label>
 
-          {/* Phone */}
-        <div className="form-group">
-  <label className="fw-bolder mb-2 pb-3">رقم الهاتف</label>
-
-  <div className="profilephone-box">
-
-    {/* مفتاح الدولة */}
-    <div
-      className="pcode-box"
-      tabIndex={0}
-      onClick={() => setShowCodes(!showCodes)}
-    >
-      <span className="arrow">▼</span>
-      <span className="code-text">{code}</span>
-
-      {showCodes && (
-        <ul className="codes-list">
-          {countries.map((c, i) => (
-            <li
-              key={i}
-              onClick={() => {
-                setCode(c.key);
-                setShowCodes(false);
-              }}
-            >
-              {c.key} ({c.name})
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
-
-    {/* خانة الرقم */}
-    <input
-      type="text"
-      className="phone-input mt-3"
-      placeholder="789 456 123"
+  <div className="phone-row">
+    {/* كود الدولة */}
+       <input
+      type="tel"
+      className="phone-number-input"
+      placeholder="123 456 789"
       value={phone}
       onChange={(e) => setPhone(e.target.value)}
     />
+    <select
+      className="country-code-input"
+      value={code}
+      onChange={(e) => setCode(e.target.value)}
+    >
+      <option value="+966">+966</option>
+      <option value="+20">+20</option>
+      <option value="+971">+971</option>
+      <option value="+962">+962</option>
+      <option value="+974">+974</option>
+    </select>
+
+    {/* رقم الهاتف */}
+ 
   </div>
 </div>
 
+         
+           <div className="form-group">
+             <label className=" fw-bolder mb-2">مواقع التواصل الاجتماعي</label>
+             <div className="social-row">
+               <div className="social-input-box">
+                 {/* <img src={facebookIcon} alt="fb" className="input-icon" /> */}
+                 <input
+                   type="text"
+                   className="form-input"
+                   placeholder="www.facebook.com/username"
+                 />
+               </div>
+             </div>
+           </div>
 
-          <div className="save-wrapper">
-            <button type="button" className="save-btn">حفظ</button>
-          </div>
+         
+           <div className="save-wrapper">
+             <button type="button" className="save-btn">حفظ</button>
+           </div>
 
-        </form>
-      </div>
-    </div>
-  );
-}
+         </form>
+       </div>
+     </div>
+   );
+ }

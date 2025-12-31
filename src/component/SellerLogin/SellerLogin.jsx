@@ -100,7 +100,7 @@ export default function SellerLogin() {
               <span
                 className="link"
                 style={{ color: "#1d3a77", cursor: "pointer", fontWeight:"bold" }}
-                onClick={() => navigate("/saller/sallerforgetpassword")}
+                onClick={() => navigate("/forgetpassword")}
               >
                 هل نسيت كلمة المرور؟
               </span>

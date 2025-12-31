@@ -263,26 +263,28 @@ font-size: 20px;
 }
 
 /* Mobile Responsive (max-width: 767px) */
+/* Mobile Responsive (max-width: 767px) */
 @media (max-width: 767px) {
   .product-page {
-    margin-top: 10%; /* Adjust top margin */
-    direction: rtl;
-    text-align: center; /* Ensure text is always centered */
-    padding: 0 20px; /* Add responsive padding for mobile */
+    margin-top: 10%; /* Adjust top margin for compact space */
+    direction: rtl; /* Maintain RTL layout */
+    text-align: center; /* Center-align the text */
+    padding: 0 20px; /* Add padding for content spacing */
   }
 
   .product-wrapper {
     width: 100%; /* Full width for better mobile experience */
     flex-direction: column; /* Stack product image and info vertically */
     align-items: center; /* Center all content */
-    justify-content: center; /* Ensure alignment in smaller screens */
-    gap: 20px; /* Reduce spacing to optimize screen space */
+    justify-content: center; /* Keep content centered */
+    gap: 20px; /* Reduce spacing for small screens */
     margin-top: 25px; /* Adjust spacing */
   }
 
-  .product-image-box {
-    width: 91%; /* Adjust image box to fit screen width */
-    height: auto; /* Dynamic height for proportional resizing */
+.bproduct-image-box {
+    width: 81%;
+    max-width: 520px;
+    height: 23vh;
     max-width: 100%; /* Prevent overflowing beyond screen edges */
     border-radius: 15px; /* Slightly reduced rounded corners */
     overflow: hidden;
@@ -296,7 +298,7 @@ font-size: 20px;
   .product-info {
     width: 100%; /* Expand info section to full width */
     text-align: center; /* Center-align content */
-    gap: 15px; /* Adjust spacing between items */
+    gap: 15px; /* Adjust spacing between elements */
   }
 
   .product-title {
@@ -307,14 +309,14 @@ font-size: 20px;
   .price-row {
     flex-direction: column; /* Stack price elements vertically */
     align-items: center; /* Center-align for better visibility */
-    gap: 10px; /* Reduce spacing to fit mobile layout */
+    gap: 10px; /* Reduce spacing for compact layout */
     margin: 10px 0; /* Adjust vertical spacing */
   }
 
   .current-price,
   .old-price,
   .discount {
-    font-size: 18px; /* Reduce font size slightly for smaller screens */
+    font-size: 18px; /* Reduce font size for smaller screens */
   }
 
   .product-desc2 {
@@ -344,11 +346,6 @@ font-size: 20px;
   .installement img,
   .international img {
     width: 12%; /* Scale down associated images */
-  }
-
-  .action.d-flex {
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 10px; /* Add spacing between stacked buttons */
   }
 
   .share-box {
@@ -481,10 +478,9 @@ font-size: 20px;
   }
 
   .action.d-flex {
-    flex-direction: row; /* Row-based layout for buttons */
-    justify-content: center;
-    gap: 12px; /* Balanced space between buttons */
-  }
+        display: block !important;
+        width: 100%;
+    }
 
   .share-box {
     gap: 12px; /* Adjust spacing between icons */
@@ -533,4 +529,27 @@ font-size: 20px;
     width: 30px; /* Resize star icons slightly for tablets */
     margin: 0 8px; /* Adjust margin for spacing */
   }
+  .installement,.international{
+        width: 100% !important;
+        height: 63px;
+    border-radius: 42px;
+  }
+  .installement .image, .international img {
+    width: 10%;
+  }
+  .installement .text1{
+        font-size: 15px;
+                margin-top: 6px;
+
+  }
+  .international .text2 {
+    font-size: 16px;
+}
+.seller-box {
+    display: block;
+    
+}
+.bank-content {
+        padding-top: 16% !important;
+}
 }

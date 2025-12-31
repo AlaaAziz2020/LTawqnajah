@@ -168,7 +168,9 @@ margin-left:2%
 .account-box{
   width: 100%;
   margin-bottom: 10px;
+  height: 116px;
 }
+
   .options-row {
     flex-direction: column;
   }
@@ -176,12 +178,30 @@ margin-left:2%
   .sellericon {
     margin-left: 0;
   }
-}
-
-
-@media (max-width: 768px) {
-
-  .account {
-    display: none;      
+  .account-title {
+    font-size: 17px;
   }
+  .account img{
+        width: 40%;
+
+  }
+  .option-text {
+    font-size: 17px;
+  
 }
+.account-box .account-icon {
+
+    width: 38px;
+}
+.account-type img{
+      width: 45%;
+
+}
+.login-logo img{
+      width: 39%;
+
+}
+
+}
+
+
