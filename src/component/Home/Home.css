@@ -518,7 +518,9 @@
     justify-content: flex-start;
   }
 
-  .products-info .customerbtn { padding: 16px 40px; }
+  .products-info .customerbtn { 
+    padding: 6px 30px; 
+  }
 
   .web-order {
     font-size: 20px;
@@ -539,7 +541,7 @@
     padding: 11px 74px;
   }
   .btn-text {
-    font-size: 16px;
+    font-size: 11px;
   }
 
   /* ===================== RATING ===================== */
@@ -772,58 +774,240 @@
 
 /* ===================== RESPONSIVE DESIGN ===================== */
 
-@media (max-width: 768px) {
-    .hero-right { flex-direction: column; }
-  .hero-heading { font-size: 30px; }
-  .categories-section,
-  .home-offers-section,
-  .featured-products-section {
-    padding: 40px 15px;
+/* ===================== Responsive Design ===================== */
+
+/* Responsive: Screens from 320px to 480px */
+@media (min-width: 320px) and (max-width: 480px) {
+  .hero-container {
+    height: 55vh; /* Smaller hero section height */
   }
 
-  .categories-section h2,
-  .home-offers-section h2,
-  .featured-products-section h2 {
-    font-size: 24px;
+  .hero-heading {
+    font-size: 18px; /* Minimized heading font size */
+    line-height: 1.2; /* Adjust line height for readability */
   }
 
-  .categories-grid,
-  .offers-grid,
-  .products-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+  .products-info {
+    flex-wrap: wrap;
+    justify-content: center; /* Center items */
+    gap: 10px; /* Reduce spacing */
   }
 
-  .offers-banner {
-    height: 250px;
-    margin: 30px auto;
+  .customerbtn {
+    width: 100%;
+    padding: 6px 15px; /* Compact padding */
+    font-size: 14px; /* Smaller font */
   }
 
-  .offer-card,
-  .product-card {
-    padding: 15px;
+  .shop-btn {
+    width: 100%;
+    font-size: 16px; /* Smaller button text size */
+    padding: 5px 12px; /* Reduce padding for smaller screens */
   }
 
-  .offer-card img,
-  .product-card img {
-    height: 140px;
+  .hero-tag {
+    font-size: 12px; /* Compact tag font */
+    padding: 6px 8px; /* Minimized padding */
+    margin-top: 8%; /* Reduce margin */
+  }
+
+  .home-rating {
+    justify-content: center; /* Center ratings */
+    gap: 10px; /* Compact spacing */
+    margin-top: 15px; /* Adjust margin */
+  }
+
+  .ratemaintext {
+    font-size: 14px; /* Small rating title */
+    text-align: center;
+  }
+
+  .rate-sub {
+    font-size: 12px; /* Compact rating subtitle */
+    text-align: center;
+  }
+
+  .icons-stack img {
+    width: 35px; /* Smaller avatar images */
+    height: 35px;
+  }
+
+  .plusicon {
+    width: 35px;
+    height: 35px;
+    font-size: 14px; /* Reduce icon text */
+  }
+
+  .web-order {
+    font-size: 14px; /* Compact order text size */
+    margin-bottom: 10px;
+    text-align: center;
   }
 }
 
-@media (max-width: 480px) {
-  .categories-grid,
-  .offers-grid,
-  .products-grid {
-    grid-template-columns: 1fr;
+/* Responsive: Screens from 481px to 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+  .hero-container {
+    height: 65vh; /* Slightly larger hero height */
   }
 
-  .offers-banner {
-    height: 200px;
+  .hero-right {
+    flex-direction: column; /* Stack content vertically */
+    width: auto;
+    padding: 10px 20px; /* Compact padding */
+    text-align: center;
+  }
+
+  .hero-heading {
+    font-size: 22px; /* Appropriate heading size */
+    margin-bottom: 18px;
+  }
+
+  .products-info {
+    flex-wrap: wrap; /* Wrap content */
+    justify-content: center; /* Center items */
+    gap: 12px;
+  }
+
+  .customerbtn {
+    width: auto;
+    padding: 8px 18px; /* Adjusted padding */
+    font-size: 16px; /* Compact button text */
+  }
+
+  .shop-btn {
+    width: 100%;
+    padding: 6px 14px; /* Compact button design */
+    font-size: 18px; /* Adjusted button text size */
+  }
+
+  .hero-tag {
+    font-size: 14px; /* Compact tag size */
+    padding: 8px 12px; /* Adjust padding */
+    margin-top: 10%; /* Reduce margin */
+  }
+
+  .home-rating {
+    flex-wrap: wrap;
+    justify-content: center; /* Align rating in center */
+    gap: 15px; /* Compact spacing */
+    margin-top: 18px;
+  }
+
+  .ratemaintext {
+    font-size: 16px; /* Adjust rating title */
+    text-align: center;
+  }
+
+
+  .rate-sub {
+    font-size: 14px; /* Compact rating subtitle */
+    text-align: center;
+  }
+
+  .icons-stack img {
+    width: 40px; /* Adjust avatar size */
+    height: 40px;
+  }
+
+  .plusicon {
+    width: 40px;
+    height: 40px;
+    font-size: 16px; /* Compact font size */
+  }
+
+  .web-order {
+    font-size: 16px; /* Compact order text size */
+    margin-bottom: 12px;
+    text-align: center; /* Center align */
+  }
+
+  .hero-tag {
+    font-size: 12px; /* Reduce tag size */
+    padding: 6px 8px; /* Compact padding */
+    margin-top: 5%; /* Further reduce margin */
+    max-width: 90%; /* Ensure proper scaling */
   }
 }
+/* ===================== Responsive Design for Screens from 768px to 1024px ===================== */
 
-@media (max-width: 767px) {
-  .hero-container { height: 60vh; }
-  .hero-content > * { text-align: center; }
-  .home-rating { text-align: center; }
+/* ===================== Responsive Design for Screens from 768px to 1024px ===================== */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-container {
+    height: 70vh; /* Adjust hero section height */
+  }
+
+  .hero-right {
+    flex-direction: column; /* Stack content */
+    width: auto; /* Adjust for container width */
+    padding: 15px; /* Minimized padding */
+    text-align: center; /* Center align content */
+  }
+
+  .hero-heading {
+    font-size: 24px; /* Reduced heading font size */
+    margin-bottom: 15px; /* Reduce spacing below heading */
+    line-height: 1.1; /* Compact line height */
+  }
+
+  .products-info {
+    flex-wrap: wrap; /* Enable wrapping */
+    justify-content: center; /* Center-align items */
+    gap: 12px; /* Slightly reduced gap */
+  }
+
+  .customerbtn {
+    width: auto; /* Dynamic width for buttons */
+    padding: 5px 15px; /* Reduced padding vertically and horizontally */
+    font-size: 16px; /* Smaller font size for buttons */
+  }
+
+  .shop-btn {
+    width: auto; /* Dynamic width for shop button */
+    font-size: 18px; /* Adjusted button text size */
+    padding: 5px 12px; /* Reduced padding */
+  }
+
+  .hero-tag {
+    font-size: 12px;
+        padding: 6px 0;
+        margin-top: 5%;
+        min-width: 13%;
+  }
+
+  .home-rating {
+    flex-wrap: wrap; /* Enable wrapping for ratings */
+    align-items: center; /* Center-align ratings */
+    justify-content: center; /* Center ratings */
+    gap: 15px; /* Adjust gap for spacing */
+    margin-top: 20px; /* Adjust margin */
+  }
+
+  .ratemaintext {
+    font-size: 16px; /* Smaller rating title */
+    text-align: center; /* Center-align title */
+  }
+
+  .rate-sub {
+    font-size: 14px; /* Adjust rating subtitle size */
+    text-align: center; /* Center-align subtitle */
+  }
+
+  .icons-stack img {
+    width: 40px; /* Adjust avatar size */
+    height: 40px;
+  }
+
+  .plusicon {
+    width: 40px;
+    height: 40px;
+    font-size: 18px; /* Compact button font size */
+  }
+
+  .web-order {
+    font-size: 16px; /* Smaller order text size */
+    margin-bottom: 15px; /* Adjust spacing below */
+    text-align: center; /* Center align order text */
+  }
 }

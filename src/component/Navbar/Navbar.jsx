@@ -70,7 +70,7 @@ export default function Navbar() {
   return (
     <>
       {/* ===== MAIN NAVBAR ===== */}
-      <div className="buyertn-nav-main">
+      <div className="buyertn-nav-main" style={{height: "70px"}}>
         <div className="buyertn-nav-wrapper">
 
           {/* LEFT */}

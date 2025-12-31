@@ -1,11 +1,44 @@
 .bproduct-image-box {
-    width: 51%;
-    max-width: 520px;
-       max-width: 520px;
-    height: 45vh;
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-    background: #f5f5f5;
+  width: 100%; /* Default: fills the container on smaller screens */
+  max-width: 520px; /* Ensures the width doesn’t exceed 520px on larger screens */
+  height: 45vh; /* Responsive height based on the viewport */
+  position: relative;
+  overflow: hidden; /* Prevents content from spilling out */
+  border-radius: 20px; /* Rounded corners */
+  background: #f5f5f5; /* Light background */
+  margin: auto; /* Centers the box */
+}
 
+/* Medium screens (≥768px - tablets, small laptops) */
+@media screen and (min-width: 768px) {
+  .bproduct-image-box {
+    width: 70%; /* Takes up 70% width on tablet screens */
+    height: 40vh; /* Slightly shorter to improve visibility */
+  }
+}
+
+/* Large screens (≥1024px and larger) */
+@media screen and (min-width: 1024px) {
+  .bproduct-image-box {
+    width: 51%; /* Matches your preferred width for desktops */
+    height: 45vh; /* Maintains the original height */
+  }
+}
+
+/* Extra-large screens (>1200px - 4K monitors) */
+@media screen and (min-width: 1200px) {
+  .bproduct-image-box {
+    width: 45%; /* Slightly smaller width for more whitespace on large screens */
+    max-width: 600px; /* Wider dimensions for high-res screens */
+    height: 50vh; /* Taller adjustment for larger viewports */
+  }
+}
+
+/* Small screens (≤576px - mobile devices) */
+@media screen and (max-width: 576px) {
+  .bproduct-image-box {
+    width: 90%; /* Fills most of the viewport width */
+    height: 35vh; /* Reduces height for tight screens */
+    margin: 10px auto; /* Adds spacing between components */
+  }
 }
