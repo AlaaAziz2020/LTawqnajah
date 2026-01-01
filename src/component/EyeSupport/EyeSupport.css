@@ -37,13 +37,17 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    color: #000;
 }
 
-.active-tab {
+.support-tab.active-tab {
   background: #1D3A77;
   color: #fff;
 }
-
+.support-tab.active-tab span {
+  background: #1D3A77;
+  color: #fff;
+}
 .inactive-tab {
   background: white;
   border: 2px solid #ECECEC;
@@ -58,5 +62,16 @@
       color: #fff;
     font-size: 20px;
     font-weight: bold;
-        padding-right: 24px;
+      
+    padding-right: 24px;
+}
+@media screen and (max-width:480px){
+  .support-tabs-column {
+            margin-top: 30%;
+            margin-bottom: 50%;
+}
+.support-tabs{
+ padding-top: 41%;
+}
+
 }

@@ -32,7 +32,7 @@ export default function SellerNavbar() {
 
   return (
     <>
-      <div className="tn-nav-main">
+      <div className="tn-nav-main seller-nav-main">
         <Container className="tn-nav-wrapper">
 
           {/* الأزرار جنب بعض */}

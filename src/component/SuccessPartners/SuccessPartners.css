@@ -97,8 +97,9 @@
   }
 
   .partners-title {
-    font-size: 20px; /* Smaller font for mobile screens */
-    margin-bottom: 20px; /* Reduce spacing */
+ font-size: 22px;
+        margin-bottom: 20px;
+        width: 80%;
   }
 
   .partner-card {

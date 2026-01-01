@@ -69,3 +69,8 @@
       direction: ltr;
 
 }
+@media screen and (max-width:480px){
+    .tabs2 {
+        padding-top: 3%;
+    }
+}

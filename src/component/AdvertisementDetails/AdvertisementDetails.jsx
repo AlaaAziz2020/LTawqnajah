@@ -85,16 +85,15 @@ export default function AddverisementDetails() {
         </div>
       </div>
 
-      {/* التبويبات */}
     
 <div className="action mt-3  d-flex justify-content-center">
     <div className="installement ">
         <img src={installement} className="image" />
-        <h4 className="text1 text-white">شحن دولي وداخلي</h4>
+        <h4 className=" text-white">شحن دولي وداخلي</h4>
     </div>
         <div className="international ">
         <img src={international} />
-        <h4 className="text2 text-white">تقسيط</h4>
+        <h4 className=" text-white">تقسيط</h4>
     </div>
 </div>
 {/* قسم المشاركة */}
@@ -116,7 +115,7 @@ export default function AddverisementDetails() {
   </div>
 
   {/* الأيقونات */}
-  <div className="share-icons">
+  <div className="share-icons socialicons2">
     <img src={facebook} />
     <img src={whatsapp} />
     <img src={insta} />

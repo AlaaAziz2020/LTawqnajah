@@ -66,14 +66,13 @@
   color: #0c317a;
   cursor: pointer;
 }
-
+/*padding-top: 9px;*/
 @media (max-width: 576px) {
   .tn-uppernav {
-    height: 64px;
-    padding: 8px 0;
-        top: 7px;
-  }
-
+height: 66px;
+        padding: 17px 0;
+        top: -1px;
+    }
   .tn-uppernav-wrapper {
     gap: 8px;
   }

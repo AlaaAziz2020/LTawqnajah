@@ -130,11 +130,10 @@ body {
   margin-top: 15%;
 }
 @media (max-width: 480px) {
-  .tn-nav-main {
-    /* top: 0 !important; */
+  /* .tn-nav-main {
     height: 80px !important;
     background: #1d3a77;
-  }
+  } */
 
   .customer-products-grid {
     margin-top: 140px !important;
@@ -144,8 +143,8 @@ body {
     margin-top: 180px !important;
   } */
 
-  .neworderspage,
-  .orderdetails-page {
+  .neworderspage
+  {
     margin-top: 200px !important;
   }
 
@@ -168,15 +167,14 @@ body {
     margin-top: 215px !important;
   }
 
-  .neworderspage,
-  .orderdetails-page {
+  .neworderspage {
     margin: 32px 0 !important;
   }
 
-  .tn-nav-main {
+  /* .tn-nav-main {
     height: 10%;
     width: 100%;
-  }
+  } */
 
   .cards-wrapper {
     margin-top: 15% !important;
@@ -194,9 +192,7 @@ body {
 
 /* ================= TABLET (≤768px) =================== */
 @media (max-width: 768px) {
-  .tn-nav-main {
-    height: 70px;
-  }
+
 
   .tn-nav-links {
     gap: 20px;

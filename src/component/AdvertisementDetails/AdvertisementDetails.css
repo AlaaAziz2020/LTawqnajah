@@ -345,7 +345,7 @@ font-size: 20px;
 
   .installement img,
   .international img {
-    width: 12%; /* Scale down associated images */
+    width: 11%; /* Scale down associated images */
   }
 
   .share-box {
@@ -370,11 +370,14 @@ font-size: 20px;
     width: 60px; /* Reduce seller image size */
     height: 60px;
   }
-
-  .share-icons {
-    justify-content: center; /* Center share icons */
-    gap: 12px; /* Adjust gap between icons */
-  }
+.socialicons2{
+  display: flex;
+  flex-direction: column;
+}
+  /* .share-icons {
+    justify-content: center;
+    gap: 12px; 
+  } */
 
   .share-icons img {
     width: 24px; /* Scale down icons */
@@ -470,13 +473,17 @@ font-size: 20px;
     width: 45%; /* Buttons fit side-by-side */
     padding: 12px; /* Slightly larger padding for tap area */
     text-align: center;
+    margin-bottom: 12px;
   }
 
   .installement img,
   .international img {
-    width: 15%; /* Rescale button icons for tablets */
+    width: 12%; /* Rescale button icons for tablets */
   }
+.installement h4,.international h4{
+      font-size: 16px;
 
+}
   .action.d-flex {
         display: block !important;
         width: 100%;

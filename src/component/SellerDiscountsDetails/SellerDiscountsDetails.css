@@ -10,6 +10,11 @@
 
 }
 @media screen and(max-width:768px) {
+    .bproduct-image-box{
+    width: 100%;
+    height: 28vh;
+
+    }
     .installement h4{
             font-size: 17px;
 

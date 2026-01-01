@@ -18,7 +18,7 @@ body {
 }
 .products-wrapper {
   padding-bottom: 30px;
-  padding-top: 1%;
+  padding-top: 0;
 }
 
 /* Header */
@@ -227,7 +227,7 @@ body {
   }
     .ccustomer-products-header {
     display: flex;
-      padding-top: 13%;
+      padding-top: 0%;
   }
 }
 
@@ -282,7 +282,7 @@ body {
   }
     .ccustomer-products-header {
     display: flex;
-    margin-top: 30%;
+    margin-top: 0%;
   }
 }
 
@@ -321,6 +321,6 @@ body {
   }
   .ccustomer-products-header {
     display: flex;
-      padding-top: 13%;
+      padding-top: 3%;
   }
 }

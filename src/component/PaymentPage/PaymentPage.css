@@ -25,7 +25,8 @@
 
 .order-summary {
   background: #fff;
-  padding: 11px 30px;
+  padding:11px 30px 31px;
+
   border-radius: 12px;
   width: 300px;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
@@ -106,5 +107,9 @@
 
   .order-summary {
     width: 100%;
+  }
+  .payment-methods{
+        width: 100%;
+
   }
 }

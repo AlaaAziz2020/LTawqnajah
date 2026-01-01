@@ -810,7 +810,14 @@
     padding: 6px 8px; /* Minimized padding */
     margin-top: 8%; /* Reduce margin */
   }
+.hero-tag .lock{
+      width: 12%;
 
+}
+.hero-tag .web-text{
+      padding-top: 8px;
+
+}
   .home-rating {
     justify-content: center; /* Center ratings */
     gap: 10px; /* Compact spacing */

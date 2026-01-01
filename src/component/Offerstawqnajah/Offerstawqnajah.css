@@ -275,7 +275,12 @@ width: 7%;
 }
 
 @media (max-width: 576px) {
+  .offersproducts-wrapper {
+        padding-top: 41%;
+
+  }
   .customer-products-grid {
     grid-template-columns: 1fr;
   }
+ 
 }

@@ -237,7 +237,7 @@
   .tn-nav-linkss {
     display: none;
     position: absolute;
-    top: 82px;
+        top: 67px;
     left: 0;
     right: 0;
     background: #10397a;
@@ -285,11 +285,18 @@
 /* ================= TABLET ================= */
 
 /* ================= TABLET (481px → 768px) ================= */
-
+@media(max-width:480px){
+     .seller-nav-main {
+      position: fixed;
+    top: 79px;
+    left: 0;
+    top: 64px;
+  } 
+}
 @media (min-width: 481px) and (max-width: 768px) {
-  /* .tn-nav-main {
-    height: 70px;
-  } */
+   .tn-nav-main {
+    top: 64px;
+  } 
 
   /* ✅ نخفي اللينكات */
   /* .tn-nav-links {
@@ -331,11 +338,18 @@
     font-size: 16px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
+     .seller-nav-main {
+      position: fixed;
+    top: 79px;
+    left: 0;
+    top: 64px;
+  } 
 }
 
 /* ================= TABLET LANDSCAPE (769px → 843px) ================= */
 
 @media (min-width: 769px) and (max-width: 843px) {
+  
   /* ✅ هنا نرجّع اللينكات طبيعي */
   /* .tn-nav-links {
     display: flex !important;

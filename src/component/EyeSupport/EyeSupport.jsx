@@ -1,5 +1,4 @@
 import React from "react";
-import { Form, Row, Col, Button } from "react-bootstrap";
 import "../EyeSupport/EyeSupport.css";
 import fsupport from "../../assets/fsupport.png";
 import eyedark from "../../assets/eyesupport.png";
@@ -11,82 +10,98 @@ export default function EyeSupport() {
       <div className="container">
         <div className="row">
 
-          {/* ===== RIGHT SIDE TABS ===== */}
-          <div className="col-lg-3 d-none d-lg-block support-tabs-column">
-            <div className="support-tabs">
+          {/* ===== TABS ===== */}
+          <div className="col-lg-3  d-lg-block">
+            <div className="support-tabs ">
 
-              <Link to="/eyesupport " className="support-tab text-white text-decoration-none active-tab">
-                <img src={eyedark} />
-                <span className="eye-text text-white">الدعم العيني</span>
+              <Link
+                to="/eyesupport"
+                className="support-tab active-tab text-decoration-none"
+              >
+                <img src={eyedark} alt="" />
+                <span className="eye-text">الدعم العيني</span>
               </Link>
 
-              <Link to="/financialsupport" className="support-tab text-decoration-none inactive-tab">
-                <img src={fsupport} />
-                <span className="f-text mx-3">الدعم المادي</span>
+              <Link
+                to="/financialsupport"
+                className="support-tab inactive-tab text-decoration-none"
+              >
+                <img src={fsupport} alt="" />
+                <span className="f-text">الدعم المادي</span>
               </Link>
 
             </div>
           </div>
 
-          {/* ===== LEFT SIDE FORM ===== */}
-          <div className="col-lg-9 col-12 ayni-wrapper">
+          {/* ===== FORM ===== */}
+          <div className="col-lg-9 col-12">
 
-            <Form.Group className="mb-4">
-              <Form.Label className="label-title">الاسم</Form.Label>
-              <Form.Control className="input-box" placeholder="الاسم" />
-            </Form.Group>
+            <div className="mb-4">
+              <label className="label-title">الاسم</label>
+              <input className="form-control input-box" placeholder="الاسم" />
+            </div>
 
-            <Row className="mb-4">
-              <Col md={6}>
-                <Form.Label className="label-title">الدولة</Form.Label>
-                <Form.Control className="input-box" placeholder="الدولة" />
-              </Col>
+            <div className="row mb-4">
+              <div className="col-md-6">
+                <label className="label-title">الدولة</label>
+                <input className="form-control input-box" placeholder="الدولة" />
+              </div>
 
-              <Col md={6}>
-                <Form.Label className="label-title">المدينة/المحافظة</Form.Label>
-                <Form.Control className="input-box" placeholder="المدينة/المحافظة" />
-              </Col>
-            </Row>
+              <div className="col-md-6">
+                <label className="label-title">المدينة / المحافظة</label>
+                <input
+                  className="form-control input-box"
+                  placeholder="المدينة / المحافظة"
+                />
+              </div>
+            </div>
 
-            <Form.Label className="label-title">رقم الهاتف</Form.Label>
-            <Row className="mb-4 w-50">
-              <Col xs={4}>
-                <Form.Select className="input-box small-box">
+            <div className="row mb-4">
+              <div className="col-md-4">
+                <label className="label-title">كود الدولة</label>
+                <select className="form-control input-box">
                   <option>+966</option>
                   <option>+20</option>
                   <option>+971</option>
-                </Form.Select>
-              </Col>
+                </select>
+              </div>
 
-              <Col xs={8}>
-                <Form.Control className="input-box" placeholder="123 456 789" />
-              </Col>
-            </Row>
+              <div className="col-md-8">
+                <label className="label-title">رقم الهاتف</label>
+                <input
+                  className="form-control input-box"
+                  placeholder="123 456 789"
+                />
+              </div>
+            </div>
 
-            <Form.Group className="mb-4">
-              <Form.Label className="label-title">العنوان</Form.Label>
-              <Form.Control className="input-box" placeholder="العنوان" />
-            </Form.Group>
+            <div className="mb-4">
+              <label className="label-title">العنوان</label>
+              <input className="form-control input-box" placeholder="العنوان" />
+            </div>
 
-            <Form.Group className="mb-4">
-              <Form.Label className="label-title">نوع الدعم العيني</Form.Label>
-              <Form.Control className="input-box" placeholder="مثال: طعام، ملابس" />
-            </Form.Group>
+            <div className="mb-4">
+              <label className="label-title">نوع الدعم العيني</label>
+              <input
+                className="form-control input-box"
+                placeholder="مثال: طعام، ملابس"
+              />
+            </div>
 
-            <Form.Group className="mb-4">
-              <Form.Label className="label-title">وصف المنتج</Form.Label>
-              <Form.Control
-                as="textarea"
-                rows={4}
-                className="input-box textarea-box"
+            <div className="mb-4">
+              <label className="label-title">وصف المنتج</label>
+              <textarea
+                rows="4"
+                className="form-control input-box"
                 placeholder="مثال: شنطة جديدة تكفي جميع الأغراض"
               />
-            </Form.Group>
+            </div>
 
-            <Button className="submit-btn w-100">إرسال الطلب</Button>
+            <button className="submit-btn w-100">
+              إرسال الطلب
+            </button>
 
           </div>
-
         </div>
       </div>
     </div>

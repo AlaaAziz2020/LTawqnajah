@@ -37,8 +37,8 @@
 /* Small screens (≤576px - mobile devices) */
 @media screen and (max-width: 576px) {
   .bproduct-image-box {
-    width: 90%; /* Fills most of the viewport width */
-    height: 35vh; /* Reduces height for tight screens */
+    width: 100%; /* Fills most of the viewport width */
+    height: 20vh; /* Reduces height for tight screens */
     margin: 10px auto; /* Adds spacing between components */
   }
 }

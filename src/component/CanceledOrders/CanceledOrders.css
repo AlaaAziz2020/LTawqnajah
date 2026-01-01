@@ -176,7 +176,9 @@ padding-top: 0;
   .canceledorder-card {
       min-height: 256px;
   } 
-  
+   .ordersdetails-page .page-title {
+    margin-top: 31%;
+  }
 
 }
 
@@ -216,7 +218,9 @@ padding-top: 0;
   .canceled-meta  { font-size: 14px; }
   .qty, .type     { font-size: 14px; }
   .canceled-price { font-size: 18px; }
-  
+  .page-title {
+    margin-top: 31%;
+  }
 }
 
 /* ---------- Desktop: 1025px and up ---------- */

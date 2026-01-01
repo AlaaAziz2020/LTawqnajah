@@ -170,12 +170,12 @@ content: "";
   }
 
   .tn-nav-download-app {
-    min-width: 120px;
-    height: 32px;
-    padding: 0 8px;
-    margin-top: 0;
-    margin-bottom: 2px;
-    font-size: 12px;
+          min-width: 120px;
+        height: 27px;
+        padding: 0 8px;
+        margin-top: 4px;
+        margin-bottom: 2px;
+        font-size: 10px;
   }
 }
 

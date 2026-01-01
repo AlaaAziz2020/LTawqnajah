@@ -12,8 +12,8 @@ export default function FinancialSupport() {
         <div className="row">
 
           {/* ===== RIGHT SIDE TABS ===== */}
-          <div className="col-lg-3 d-none d-lg-block support-tabs-column">
-            <div className="support-tabs">
+          <div className="col-lg-3  d-lg-block support-tabs-column">
+            <div className="support-tabs tabs2">
 
               {/* الدعم العيني */}
               <Link to="/eyesupport" className="text-decoration-none support-tab inactive-tab">
