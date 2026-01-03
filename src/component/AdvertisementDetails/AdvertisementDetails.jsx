@@ -50,12 +50,12 @@ export default function AddverisementDetails() {
             alt="product"
             className="main-image"
           />
-   <button className="slide-btn right" onClick={prevSlide}>
+   {/* <button className="slide-btn right" onClick={prevSlide}>
             <i className="fa-solid fa-chevron-left"></i>
-          </button>
-           <button className="slide-btn left" onClick={nextSlide}>
+          </button> */}
+           {/* <button className="slide-btn left" onClick={nextSlide}>
             <i className="fa-solid fa-chevron-right"></i>
-          </button>
+          </button> */}
 
          
 

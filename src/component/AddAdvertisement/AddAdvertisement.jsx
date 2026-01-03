@@ -26,7 +26,7 @@ export default function AddAdvertisement() {
     <div className="add-ad-page container mt-5 pt-4 mb-5 pb-5">
 
       {/* العنوان */}
-      <h2 className="page-title mb-4 ">
+      <h2 className="page-title mt-5 mb-4 headeradvertisement">
         إضافة إعلان <span>/ الرئيسية</span>
       </h2>
 

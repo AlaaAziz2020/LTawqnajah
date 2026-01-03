@@ -4,6 +4,9 @@
    - Tablet: 768px — 1024px
    - Desktop: 1025px and up
 */
+.cancelled-page{
+  margin-top: 0%;
+}
 
 /* ========== GENERAL ========== */
 .canceled-page { direction: rtl; }
@@ -111,8 +114,20 @@
     font-weight: bold;
 } */
 /* ========== RESPONSIVE ========== */
+.cancelorders-right-tabs{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    max-width: 260px;
+    margin-top: 50px;
+    padding: 2px;
+}
+
 .canceledorder-card {
   background: #fff;
+      min-height: 140px;
+    margin-top: 21%;
   padding: 16px;
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
@@ -123,6 +138,9 @@
 /* ---------- Mobile: up to 767px ---------- */
 @media (max-width: 767px) {
   /* reduced top spacing on mobile */
+  .cancelled-page {
+    padding-top: 8%;
+}
   .cards-side{
 padding-top: 0;
   }
@@ -159,8 +177,8 @@ padding-top: 0;
   .canceled-price { font-size: 16px; }
 
   .canceled-left, .canceled-status { float: none; }
-.neworders-page{
-      padding-top: 14%;
+.cancelledneworders-page{
+      padding-top: 16%;
 
 }
   /* avoid forcing extra vertical space from a fixed top value */
@@ -188,7 +206,9 @@ padding-top: 0;
     padding-top: 10%;
   } */
   .corders-wrapper { margin-top: 42px; }
-
+.cancelled-page {
+    padding-top: 12%;
+}
   .canceled-card {
     flex-direction: row;
     align-items: center;
@@ -221,10 +241,14 @@ padding-top: 0;
   .page-title {
     margin-top: 31%;
   }
+
 }
 
 /* ---------- Desktop: 1025px and up ---------- */
 @media (min-width: 1025px) {
+  .cancelled-page {
+    padding-top: 3%;
+}
   .corders-wrapper { margin-top: 32px; }
 
   .canceled-card {
@@ -246,9 +270,16 @@ padding-top: 0;
   .canceled-meta  { font-size: 15px; }
   .qty, .type     { font-size: 14px; }
   .canceled-price { font-size: 18px; }
+.cancelorders-right-tabs{
+      padding-top: 71px;
 }
+}
+
 /* Large desktop: 1025px — 1440px */
 @media (min-width: 1025px) and (max-width: 1440px) {
+  .cancelled-page {
+    padding-top: 12%;
+}
   .corders-wrapper { margin-top: 15%; }
 
   .canceled-card {
@@ -278,6 +309,9 @@ padding-top: 0;
 
 /* Extra large: 1441px and up (optional tweaks for very large screens) */
 @media (min-width: 1441px) {
+  .cancelled-page {
+    padding-top: 5%;
+}
   .corders-wrapper { margin-top: 40px; }
 
   .canceled-card {

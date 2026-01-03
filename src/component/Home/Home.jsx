@@ -18,6 +18,7 @@ import OffersTawq from "../OffersTawq/OffersTawq";
 import CategoriesSlider from "../CategoriesSlider/CategoriesSlider";
 import CategoryDetails from "../CategoryDetails/CategoryDetails";
 import CategoryPage from "../CategoryPage/CategoryPage";
+import Offers from "../Offers/Offers";
 
 export default function Home() {
    const navigate = useNavigate(); 
@@ -123,9 +124,9 @@ export default function Home() {
 
       <Categories />
 
-       <ProductsSection /> 
-      {/* <Offerstawqnajah />  */}
-      {/* <OffersTawq/> */}
+       {/* <ProductsSection />  */}
+       <Offerstawqnajah /> 
+      <Offers/>
       <SuccessPartners />
     </div>
   );

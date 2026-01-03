@@ -9,8 +9,9 @@ export default function ContractPage() {
   const [activeTab, setActiveTab] = useState("contract");
 
   return (
-    <div className="contract-page container">
-
+    <div className=" ccontract-page ">
+<div className="container">
+      <div className="row">
       {/* ==== Tabs Header ==== */}
       <div className="tabs-header mt-5 mb-5 pt-5 pb-5">
         <button
@@ -100,7 +101,8 @@ export default function ContractPage() {
           </div>
         </div>
       )}
-
+</div>
+</div>
     </div>
   );
 }

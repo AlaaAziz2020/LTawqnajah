@@ -7,6 +7,7 @@ import marketinglogo from "../../assets/marketing-logo.png";
 import marketingimg from "../../assets/m-img.png";
 import addadvertisements from "../../assets/addadvertisements.png";
 import logoutimg from "../../assets/logout-img.png";
+
 import { Link } from "react-router-dom";
 
 export default function Marketing() {
@@ -23,7 +24,8 @@ export default function Marketing() {
               <span className="px-2">حسابي الشخصي</span>
             </Link>
 
-            <Link to="/marketing" className="side-btn active">
+            <Link to="/marketing" className="side-btn active d-flex  
+    justify-content-start">
               <img src={marketingimg} alt="" />
               <span className="px-2">التسويق</span>
             </Link>

@@ -122,7 +122,7 @@ export default function ProductsSection() {
   const navigate = useNavigate();
 
   return (
-    <div className="products-wrapper ">
+    <div className="products-wrapper mt-5 ">
       <div className="container ">
         {sections.map((sec, index) => (
           <section key={index} className="">

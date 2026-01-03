@@ -8,6 +8,7 @@
   font-size: 26px;
   font-weight: 700;
   color: #1d3a77;
+  padding-top: 8%;
 }
 
 .page-title span {
@@ -120,4 +121,9 @@
   border-radius: 50%;
   font-size: 14px;
   cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .headeradvertisement{
+  padding-top: 10%;
+}
 }

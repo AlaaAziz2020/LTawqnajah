@@ -25,3 +25,9 @@
     color: #666;
     font-weight: bold;
 }
+@media screen and (max-width:768px){
+  .seller-details-page img{
+        margin-top: 18%;
+
+  }
+}

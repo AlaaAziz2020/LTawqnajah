@@ -1,5 +1,5 @@
-.banckaccount{
-  margin-top: 7%;
+.banckaccount2{
+  padding-top: 6%;
 }
 .bank-content {
   flex: 1;
@@ -142,6 +142,10 @@
 }
 
 @media (max-width: 480px) {
+  .banckaccount2{
+    margin-top: 10%;
+    margin-bottom: 12%;
+  }
   .bank-content {
     margin-top: 5%;
     padding: 0 10px;

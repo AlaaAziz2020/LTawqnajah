@@ -65,13 +65,24 @@
       
     padding-right: 24px;
 }
+.submit-btn{
+  margin-bottom: 10%;
+}
 @media screen and (max-width:480px){
+  .support-wrapper .label-title{
+    padding-top: 1px;
+  }
   .support-tabs-column {
             margin-top: 30%;
             margin-bottom: 50%;
 }
 .support-tabs{
  padding-top: 41%;
-}
+     margin-bottom: 10%;
 
+}
+.support-wrapper .submit-btn{
+    margin-bottom: 18%;
+
+}
 }

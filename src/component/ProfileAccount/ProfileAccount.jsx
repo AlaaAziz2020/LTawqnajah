@@ -1,30 +1,65 @@
  import React, { useState } from "react";
  import "../ProfileAccount/ProfileAccount.css";
  import avatarImg from "../../assets/avatar.jpg";
- import profilepicture from "../../assets/profileicon.png";
+import profilepicture from "../../assets/profileicon.png";
  import accountimg from "../../assets/account-img.png";
  import marketingimg from "../../assets/m2.png";
+ import myadvertisements from "../../assets/myadvertisements.png";
+import addadvertisements from "../../assets/addadvertisements.png";
+
  import survimg from "../../assets/surv-img.png";
  import logoutimg from "../../assets/logout-img.png";
 import { Link } from "react-router-dom";
 
+//  import facebookIcon from "../../assets/logos_facebook.png";
 
-export default function ProfileAccount() {
-  const [code, setCode] = useState("+966");
-  const [showCodes, setShowCodes] = useState(false);
-  const [phone, setPhone] = useState("");
+ export default function ProfileAccount() {
+   const [code, setCode] = useState("+966");
+   const [showCodes, setShowCodes] = useState(false);
+   const [filter, setFilter] = useState("");
+   const [phone, setPhone] = useState("");
 
-  const countries = [
-    { key: "+966", name: "السعودية" },
-    { key: "+971", name: "الإمارات" },
-    { key: "+20", name: "مصر" },
-    { key: "+962", name: "الأردن" },
-    { key: "+974", name: "قطر" },
-  ];
+   const countries = [
+     { key: "+966", name: "السعودية" },
+     { key: "+971", name: "الإمارات" },
+     { key: "+20", name: "مصر" },
+     { key: "+962", name: "الأردن" },
+     { key: "+974", name: "قطر" },
+   ];
+
    return (
-     <div className="profile-wrapper container" style={{marginTop:"90px"}}>
+     <div className="profile-wrapper container mt-5 " >
+   <div className="m-marketing-sidebar  mb-5 col-md-6">
 
-      
+            <Link to="/profileaccount" className="side-btn active white mt-5 ">
+              <img src={profilepicture} alt="" />
+              <span className="px-2">حسابي الشخصي</span>
+            </Link>
+
+        <Link to='/marketing' className="text-dark text-decoration-none">
+  <button className="side-btn">
+    <img src={marketingimg} alt="" />
+    التسويق
+  </button>
+</Link>
+
+            <Link to="/advertisementdetails" className="side-btn white">
+              <img src={myadvertisements} alt="" />
+              <span className="px-2">إعلاناتي</span>
+            </Link>
+
+            <Link to="/addadvertisement" className="side-btn white">
+              <img src={addadvertisements} alt="" />
+              <span className="px-2">إضافة إعلان</span>
+            </Link>
+
+            <Link to="/logoutconfirm" className="side-btn logout">
+              <img src={logoutimg} alt="" />
+              <span className="px-2">تسجيل الخروج</span>
+            </Link>
+
+          </div>
+{/* 
        <div className="marketing-sidebar ">
          <button className="side-btn active" style={{alignItem:"center"}}>
            <img src={profilepicture} alt="" /> حسابي الشخصي
@@ -32,10 +67,10 @@ export default function ProfileAccount() {
 
          <button className="side-btn">
            <img src={accountimg} alt="" />
-           <Link to='/seller/sellerbankaccount' className="text-dark text-decoration-none"> الحساب البنكي</Link>
+           <Link to='/bankaccount' className="text-dark text-decoration-none"> الحساب البنكي</Link>
          </button>
 
-<Link to='/seller/sellermarketing' className="text-dark text-decoration-none">
+<Link to='/marketing' className="text-dark text-decoration-none">
   <button className="side-btn">
     <img src={marketingimg} alt="" />
     التسويق
@@ -45,18 +80,18 @@ export default function ProfileAccount() {
          <button className="side-btn">
                        <img src={survimg} alt="" /> 
 
-            <Link to='/seller/sellercontractpage' className="text-dark text-decoration-none"> 
+            <Link to='/contractpage' className="text-dark text-decoration-none"> 
            التقييم والعقود
             </Link>
          </button>
 
          <button className="side-btn logout">
            <img src={logoutimg} alt="" /> 
-             <Link to='/seller/sellerlogoutconfirm' className="text-white text-decoration-none"> 
+             <Link to='/logoutconfirm' className="text-white text-decoration-none"> 
           تسجيل الخروج
             </Link>
          </button>
-       </div>
+       </div> */}
 
        <div className="profile-content">
 

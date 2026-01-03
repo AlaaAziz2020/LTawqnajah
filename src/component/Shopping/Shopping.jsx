@@ -154,7 +154,7 @@ export default function Shopping() {
           </div>
 
           {/* ===== PRODUCTS ===== */}
-          <div className="col-md-9 shopping-left pt-5">
+          <div className="col-md-9 shopping-left">
             {/* <button className="filter-toggle-btn" onClick={() => setShowFilters(!showFilters)}>
               {showFilters ? 'إخفاء الفلاتر' : 'عرض الفلاتر'}
             </button> */}

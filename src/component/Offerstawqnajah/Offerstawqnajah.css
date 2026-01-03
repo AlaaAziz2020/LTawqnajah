@@ -1,15 +1,15 @@
- .offersproducts-wrapper{
+ .offersproducts-wrapper2{
   padding-bottom: 30px;
     padding-top: 14%;
 
  }
  .offerscustomer-products-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  direction: rtl;
-  margin-top: 0px;
-}
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+    direction: rtl;
+    margin-top: 5%;
+ }
 
 .offerscustomer-products-title {
     font-size: 24px;

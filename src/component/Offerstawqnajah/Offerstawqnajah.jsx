@@ -122,11 +122,14 @@ export default function Offerstawqnajah() {
   const navigate = useNavigate();
 
   return (
-    <div className="offersproducts-wrapper mb-5 pb-5">
-      <div className="offers container ">
+    <div className="offers-wrapper2 mb-5 pb-5" style={{marginTop: "130px"}} >
+      <div className=" container">
+        <div className="row">
+
+        </div>
         {sections.map((sec, index) => (
           <section key={index} className="">
-            <div className="offerscustomer-products-header  ">
+            <div className="offerscustomer-products-header " >
               <h2 className="offerscustomer-products-title ">{sec.title}</h2>
               {/* <span className="customer-view-more">رؤية المزيد</span> */}
             </div>
@@ -134,7 +137,7 @@ export default function Offerstawqnajah() {
             {/* الكروت Bootstrap Responsive: change to col-md-3 for 4 columns at md and up */}
             <div className="row g-4 ">
               {sec.products.map((p) => (
-                <div key={p.id} className="col-12 col-sm-6 col-md-3 pb-5 pt-4">
+                <div key={p.id} className="col-12 col-sm-6 col-md-3  pt-4">
                   <ProductCard p={p} navigate={navigate} />
                 </div>
               ))}
@@ -153,12 +156,12 @@ export default function Offerstawqnajah() {
 function ProductCard({ p, navigate }) {
   return (
     <Link
-      to="/productssection"
+      to="/offerstawqnajah"
       state={{ product: p }}
-      className="offerscustomer-product-card d-block h-100 d-flex flex-column mt-2"
+      className="offerscustomer-product-card d-block h-100 d-flex flex-column "
       style={{ textDecoration: "none", color: "inherit" }}
     >
-      <div className="offerscustomer-discount">{p.discount}%</div>
+      <div className="offerscustomer-discount ">{p.discount}%</div>
 
       <img src={p.img} className="offerscustomer-product-img" alt={p.name} />
 
@@ -167,7 +170,7 @@ function ProductCard({ p, navigate }) {
       </button>
 
       {/* card body grows to push button to bottom */}
-      <div className="offerscustomer-card-body px-3 mt-2 ">
+      <div className="offerscustomer-card-body px-3  ">
         <div className="d-flex justify-content-between align-items-start">
           <h3 className="offerscustomer-product-name">{p.name}</h3>
           <div className="customer-rate">

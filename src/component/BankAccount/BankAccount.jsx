@@ -9,40 +9,19 @@ import logoutimg from "../../assets/logout-img.png";
 
 export default function BankAccount() {
   return (
-    <div className="profile-wrapper banckaccount container">
+    <div className="profile-wrapper2 banckaccount2 ">
+      <div className="container">
 
-      {/* ===== Sidebar ===== */}
-      {/* <div className="marketing-sidebar mt-5">
-
-        <button className="side-btn">
-          <img src={profilepicture} /> حسابي الشخصي
-        </button>
-
-        <button className="side-btn active">
-          <img src={accountimg} /> الحساب البنكي
-        </button>
-
-        <button className="side-btn">
-          <img src={marketingimg2} /> التسويق
-        </button>
-
-        <button className="side-btn">
-          <img src={survimg} /> التقييم والتعاقد
-        </button>
-
-        <button className="side-btn logout">
-          <img src={logoutimg} /> تسجيل الخروج
-        </button>
-
-      </div> */}
+  
+    
 
       {/* ===== Content ===== */}
-      <div className="bank-content  mb-3">
-        <h1 className="text-center ">الحساب البنكي</h1>
+      <div className="bank-content pt-5">
+        <h1 className="text-center mt-4 baccount ">الحساب البنكي</h1>
 
         {/* اسم البنك */}
-        <div className="bank-input">
-          <label className="pb-2">اسم البنك</label>
+        <div className="bank-input2">
+          <label className="pb-2 ">اسم البنك</label>
           <input type="text" placeholder="ادخل اسم البنك" />
         </div>
 
@@ -79,8 +58,9 @@ export default function BankAccount() {
         </div>
 
         {/* Button */}
-        <button className="submit-btn">إرسال للمراجعة</button>
+        <button className="submit-btn ">إرسال للمراجعة</button>
       </div>
+    </div>
     </div>
   );
 }

@@ -137,6 +137,7 @@ import WinterjacketDetails from './component/WinterjacketDetails/WinterjacketDet
 import SellerBurgerOffer from './component/SellerBurgerOffer/SellerBurgerOffer';
 import SellerMobileOffer from './component/SellerMobileOffer/SellerMobileOffer';
 import SellerMyStore from './component/SellerMyStore/SellerMyStore';
+import Offers from './component/Offers/Offers';
 
 const router = createBrowserRouter([
   {
@@ -209,6 +210,7 @@ const router = createBrowserRouter([
 { path: 'morerelated', element: <MoreRelated /> },
 { path: 'favorites', element: <Favorites /> },
 {path:'categorydetails',element:<CategoryDetails/>},
+{path:'winterjacketshirt',element:<WinterjacketDetails/>},
 //  {path:'offertawq',element:<OfferTawq/>},
 // { path:"register", element:<Register />} ,
 {path:'productselectronis',element:<ProductsElectronics/>},
@@ -217,6 +219,7 @@ const router = createBrowserRouter([
 {path:'fsuccess',element:<FSuccess/>},
 {path:'categoriesslider',element:<CategoriesSlider/>},
 {path:'abouttawq' ,element:<Abouttawq/>},
+{path:'offers',element:<Offers/>},
 //  {path:"offerstwq",element:<OffersTawq/>},
 {path:"offerstawqnajah",element:<Offerstawqnajah/>},
 {path:"successpartners",element:<SuccessPartners/>},
@@ -293,7 +296,7 @@ const router = createBrowserRouter([
       { path:'/seller/sellerproductsSection',element:<SellerProductsSection/> },
       { path: '/seller/sellermorerelated', element: <SellerMoreRelated /> },
       { path:'/seller/sellerabouttawq',element:<SellerAbouttawq/> },
-      {path:'seller/winterjacketdetails',element:<WinterjacketDetails/>},
+      // {path:'seller/winterjacketdetails',element:<WinterjacketDetails/>},
       {path:'seller/sellerburgeroffer',element:<SellerBurgerOffer/>},
       {path:'seller/sellermobileoffer',element:<SellerMobileOffer/>},
       {path:'seller/sellerdiscountsdetails',element:<SellerDiscountsDetails/>},

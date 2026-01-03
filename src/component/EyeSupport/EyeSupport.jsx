@@ -37,7 +37,7 @@ export default function EyeSupport() {
           <div className="col-lg-9 col-12">
 
             <div className="mb-4">
-              <label className="label-title">الاسم</label>
+              <label className="label-title pt-3">الاسم</label>
               <input className="form-control input-box" placeholder="الاسم" />
             </div>
 
@@ -97,7 +97,7 @@ export default function EyeSupport() {
               />
             </div>
 
-            <button className="submit-btn w-100">
+            <button className="submit-btn w-100 ">
               إرسال الطلب
             </button>
 

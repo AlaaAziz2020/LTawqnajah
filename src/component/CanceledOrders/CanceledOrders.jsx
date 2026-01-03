@@ -25,12 +25,12 @@ export default function CanceledOrders() {
   };
 
   return (
-    <div className="container neworders-page mt-5 pt-5  mb-5 pb-5">
-
+    <div className=" cancelledneworders-page  mb-5 pb-5">
+<div className='container'>
       <div className="row mb-5">
 
-        <div className="col-lg-3 d-lg-block pt-5 mt-2 mb-5 pb-5 ">
-          <div className="orders-right-tabs">
+        <div className="col-lg-3 d-lg-block cancelled-page">
+          <div className="cancelorders-right-tabs">
 
             <button
                 className={`cright-tab cright-btn2 ${
@@ -63,7 +63,7 @@ export default function CanceledOrders() {
         </div>
 
         {/* ====== الجزء الشمال (الكروت) ====== */}
-        <div className="col-lg-9 col-12 mt-5 pt-3">
+        <div className="col-lg-9 col-12 ">
 
           <div className="corders-wrapper">
             {orders.map((order) => (
@@ -100,6 +100,7 @@ export default function CanceledOrders() {
 
         </div>
 
+      </div>
       </div>
     </div>
   );
